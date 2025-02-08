@@ -9,11 +9,6 @@ COPY . .
 FROM python:3.12-alpine AS runner
 COPY --from=build /application ./application
 WORKDIR /application
-CMD .venv/bin/python Toor.py
-# CMD source .venv/bin/activate \
-# && export PYTHONPATH=$(pwd) \
-# && mkdir alembic/versions -p \
-# # && alembic upgrade head \
-# # && python server.py
-# && python Toor.py
-
+CMD source .venv/bin/activate \
+&& export PYTHONPATH=$(pwd) \
+&& python server.py
