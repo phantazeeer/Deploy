@@ -1,4 +1,9 @@
-# Сборка проект GribTrip
+# Сборка проекта GribTrip
+
+
+```commandline
+copy GribTripBackend\.env.template .env
+```
 
 
 ```commandline
@@ -22,7 +27,11 @@ pip install -r requirements.txt
 ```
 
 ```commandline
-cp .env.template .env
+copy .env.template .env
+```
+
+```commandline
+mkdir alembic\versions
 ```
 
 ```commandline
