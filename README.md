@@ -5,6 +5,9 @@
 copy GribTripBackend\.env.template .env
 ```
 
+```commandline
+copy GribTripFrontend\.env.template GribTripFrontend\.env
+```
 
 ```commandline
 docker-compose up -d db
